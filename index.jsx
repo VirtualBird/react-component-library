@@ -10,7 +10,7 @@ import Testimonial from "./components/Testimonial/Testimonial"
 import Tooltip from "./components/Tooltip/Tooltip"
 import { FaCarrot } from "react-icons/fa";
 
-import {photoIMG} from "./images/stock-img.jpg"
+import photoIMG from "./images/stock-img.jpg"
 
 function App() {
   return (
