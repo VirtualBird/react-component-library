@@ -10,6 +10,8 @@ import Testimonial from "./components/Testimonial/Testimonial"
 import Tooltip from "./components/Tooltip/Tooltip"
 import { FaCarrot } from "react-icons/fa";
 
+import {photoIMG} from "./images/stock-img.jpg"
+
 function App() {
   return (
     <>
@@ -77,7 +79,7 @@ function App() {
         <h1 className="page-testimonials-text pm-font">Testimonials</h1>
         
         <h2 className="page-testimonials-with-pic pm-font">With Pic</h2>
-        <Testimonial photo="./images/stock-img.jpg" quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit." name="May Andersons" role="Workcation, CTO"/>
+        <Testimonial photo={photoIMG} quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit." name="May Andersons" role="Workcation, CTO"/>
         
         <h2 className="page-testimonials-no-pic pm-font">No Pic</h2>
         <Testimonial quote="This one's without photo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit." name="May Andersons" role="Workcation, CTO"/>
