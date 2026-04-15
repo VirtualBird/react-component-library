@@ -14,8 +14,6 @@ export default function Badge({children = "Badge", color = "default", variant = 
         const classNameSplit = className.split(' ')
         //  And see if any color string passed in className matches something in colorClasses
         const colorFound = classNameSplit.find(item => colorClasses.includes(item) )
-        
-        console.log(colorFound)
         //  If no class name matching color preset was found, default to gray
         color = colorFound ? colorFound : "gray"
     }
@@ -27,8 +25,6 @@ export default function Badge({children = "Badge", color = "default", variant = 
         const classNameSplit = className.split(' ')
         //  And see if any color string passed in className matches something in colorClasses
         const variantFound = classNameSplit.find(item => variantClasses.includes(item) )
-        
-        console.log(variantFound)
         //  If no class name matching color preset was found, default to gray
         variant = variantFound ? variantFound : "square"
     }
